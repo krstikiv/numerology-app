@@ -1,0 +1,85 @@
+body {
+   background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/logo_x_pattern.png");
+    }
+
+div {
+  text-align: center;
+}
+
+tbody {
+  text-align: left;
+}
+.navbar-default .navbar-brand {
+    color: #ec4582;
+}
+.well {
+  margin: 80px;
+}
+.panel {
+  width: 250px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.list-group {
+  width: 380px;
+  margin: 0 auto;
+}
+
+.contact {
+  padding-top: 20px;
+}
+#about {
+  text-align: center;
+}
+
+.media-body {
+  padding-top: 20px;  
+  text-align: left;
+}
+.find_num {
+  color: #d9534f;
+  }
+
+.list-group {
+  text-align: left;
+}
+#form_bday{
+   margin: 10px;
+   padding-top: 30px;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    }
+
+ .errors{
+	color: red;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    
+ }
+
+#label{
+    font-size: 20px;
+    }
+
+#edit {
+  color:#ecaf45;
+}
+
+#new {
+  color: #af45ec;
+}
+
+#create-person {
+  padding-top: 25px;
+}
+
+
+

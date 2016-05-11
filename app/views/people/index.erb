@@ -1,0 +1,40 @@
+<h1>All People</h1>
+<p class="btn btn-default"><a href="/people/new">Create a New Person</a></p>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <caption>List of users</caption>
+    <thead>
+      <tr style="font-size: 20px">
+        <th>Name</th>
+        <th>Birthdate</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @people.each do |person| %>
+      <tr>
+        <td scope="row">
+          <a href="<%= "/people/#{person.id}" %>">
+            <%= "#{person.first_name} #{person.last_name}" %>
+          </a>
+        </td>
+        <td scope="row">
+          <%= "#{person.birthdate}" %>
+        </td>
+        <td scope="row">
+          <p class="btn btn-default">
+            <a href="<%= "/people/#{person.id}/edit" %>"> Edit </a>
+          </p>
+        </td>
+        <td scope="row">
+          <form action="<%= "/people/#{person.id}" %>" method="post">
+            <input type="hidden" name="_method" value="delete" />
+            <button type="submit" value="Delete" class="btn btn-danger">Delete</button>
+          </form>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,33 @@
+<div class="panel">
+
+<% if !@errors.blank? %>
+  <p class="errors">
+    <%= "#{@errors}" %>
+  </p>
+<% end %>
+
+<form role="form" action="<%= people_form_action(@person) %>" method="post" id="<%= people_form_id(@person) %>" class="<%= people_form_class(@person) %>">
+
+<div class="form-group">
+<input type="hidden" name="_method" value="<%= people_form_method(@person) %>" />
+</div>
+
+<div class="form-group">
+<label for="first_name" id="label">First Name</label>
+<input type="text" class="form-control" name="first_name" value="<%= @person.first_name %>" placeholder="John">
+</div>
+
+<div class="form-group">
+<label for="last_name" id="label">Last Name</label>
+<input type="text" class="form-control" name="last_name" value="<%= @person.last_name %>" placeholder="Smith">
+</div>
+
+<div class="form-group">
+<label for="birthdate" id="label">Birthdate</label>
+<input name="birthdate" class="form-control" type="date" value="<%= @person.birthdate %>" placeholder="MMDDYYYY">
+</div>
+
+<button type="submit" class="btn btn-lg btn-success">Submit</button>
+</form>
+
+</div>

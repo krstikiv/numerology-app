@@ -1,0 +1,24 @@
+<div class="row">
+<div><h2 class="find_num">Find Your Numerology Number</h2>
+<p class="text-muted">Enter your birthday below to get your numerology number.<br>
+If you would like to save your number click "Create a New Person"
+</p></div>
+
+<div id="form_bday">
+
+<form class="form-inline" action="/" method="post">
+  <div class="form-group">
+    <label for="birthdate" id="label">Enter your birthdate:</label>
+    <input type="date" class="form-control" name="birthdate" placeholder="MMDDYYYY">
+  </div>
+  <button type="submit" class="btn btn-danger">Submit</button>
+</form>
+</div>
+<% if !@error.nil? %>
+  <p class="error"><%= @error %></p>
+<% end %>
+
+<p id="create-person"><a href="/people/new">Create a New Person</a></p>
+
+
+</div>
